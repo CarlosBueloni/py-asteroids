@@ -15,6 +15,7 @@ def main():
         screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         pygame.Surface.fill(screen, color="black")
         player.draw(screen)
+        player.update(dt)
         pygame.display.flip()
         dt = clock.tick(60) / 1000
 
